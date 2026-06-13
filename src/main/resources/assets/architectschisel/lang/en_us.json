@@ -1,7 +1,22 @@
 {
+  "creativetab.architectschisel.materials" : "Architects | Materials",
+  "creativetab.architectschisel.blocks" : "Architects | Blocks",
+
   "item.architectschisel.iron_chisel": "Iron Chisel",
-  "tooltip.item_chisel": "Right Click and Change Blocks",
+  "tooltip.item.iron_chisel": "Right Click and Change Blocks",
 
   "block.architectschisel.acacia_planks_1": "Acacia Planks",
-  "tooltip.block.acacia_planks_1": "Vertical"
+  "tooltip.block.acacia_planks_1": "Vertical",
+  "block.architectschisel.acacia_planks_2": "Acacia Planks",
+  "tooltip.block.acacia_planks_2": "Boxed",
+  "block.architectschisel.acacia_planks_3": "Acacia Planks",
+  "tooltip.block.acacia_planks_3": "Rough",
+  "block.architectschisel.acacia_planks_4": "Acacia Planks",
+  "tooltip.block.acacia_planks_4": "Tiles",
+  "block.architectschisel.acacia_planks_5": "Acacia Planks",
+  "tooltip.block.acacia_planks_5": "Framed",
+  "block.architectschisel.acacia_planks_6": "Acacia Planks",
+  "tooltip.block.acacia_planks_6": "Large",
+  "block.architectschisel.acacia_planks_7": "Acacia Planks",
+  "tooltip.block.acacia_planks_7": "Mosaic"
 }
