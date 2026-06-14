@@ -1,0 +1,10 @@
+{
+  "chiseling": {
+    "sounds": [
+      {
+        "name": "architectschisel:chiseling",
+        "type": "file"
+      }
+    ]
+  }
+}

@@ -35,7 +35,6 @@ public class ChiselRecipeFactory extends SimpleJsonResourceReloadListener {
                 ChiselRecipe recipe = fromJson(GsonHelper.convertToJsonObject(entry.getValue(), "top element"));
                 if (recipe != null) {
                     recipes.add(recipe);
-                    LOGGER.info("Loaded chisel recipe: {}", id);
                 }
             } catch (JsonParseException e) {
                 LOGGER.error("Error loading chisel recipe {}", id, e);

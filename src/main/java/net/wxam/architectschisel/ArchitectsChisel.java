@@ -6,6 +6,7 @@ import net.wxam.architectschisel.item.ModCreativeModeTabs;
 import net.wxam.architectschisel.item.ModItems;
 import net.wxam.architectschisel.menu.ModMenuTypes;
 import net.wxam.architectschisel.recipe.ChiselRecipeFactory;
+import net.wxam.architectschisel.sounds.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -43,6 +44,7 @@ public class ArchitectsChisel {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

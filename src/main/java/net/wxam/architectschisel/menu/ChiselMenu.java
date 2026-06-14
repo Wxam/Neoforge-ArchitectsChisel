@@ -1,6 +1,7 @@
 package net.wxam.architectschisel.menu;
 
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -8,7 +9,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.wxam.architectschisel.recipe.ChiselRecipeFactory;
+import net.wxam.architectschisel.sounds.ModSounds;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -130,6 +133,14 @@ public class ChiselMenu extends AbstractContainerMenu {
                     playerInventory.setItem(slot, new ItemStack(variantItem.getItem(), stack.getCount()));
                 }
             }
+        }
+
+        Level level = player.level();
+        if (!level.isClientSide()) {
+            level.playSound(null, player.blockPosition(),
+                    ModSounds.CHISELING_SOUND.get(),
+                    SoundSource.PLAYERS,
+                    1.0f, 1.0f);
         }
 
         resultSlot.set(newStack);
