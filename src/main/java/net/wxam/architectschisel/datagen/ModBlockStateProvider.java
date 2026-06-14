@@ -578,14 +578,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(ModBlocks.CALCITE_SLAB_7, "calcite_7");
         slabBlock(ModBlocks.CALCITE_SLAB_8, "calcite_8");
 
-        blockWithItem(ModBlocks.DRIPSTONE_1);
+        columnBlockWithItem(ModBlocks.DRIPSTONE_1, "dripstone_1", "dripstone_1_top");
         blockWithItem(ModBlocks.DRIPSTONE_2);
         blockWithItem(ModBlocks.DRIPSTONE_3);
         blockWithItem(ModBlocks.DRIPSTONE_4);
         blockWithItem(ModBlocks.DRIPSTONE_5);
         blockWithItem(ModBlocks.DRIPSTONE_6);
         blockWithItem(ModBlocks.DRIPSTONE_7);
-        stairsBlock(ModBlocks.DRIPSTONE_STAIRS_1, "dripstone_1");
+        stairsBlockTop(ModBlocks.DRIPSTONE_STAIRS_1, "dripstone_1", "dripstone_1_top");
         stairsBlock(ModBlocks.DRIPSTONE_STAIRS_2, "dripstone_2");
         stairsBlock(ModBlocks.DRIPSTONE_STAIRS_3, "dripstone_3");
         stairsBlock(ModBlocks.DRIPSTONE_STAIRS_4, "dripstone_4");
@@ -593,8 +593,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(ModBlocks.DRIPSTONE_STAIRS_6, "dripstone_6");
         stairsBlock(ModBlocks.DRIPSTONE_STAIRS_7, "dripstone_7");
         stairsBlockVanilla(ModBlocks.DRIPSTONE_STAIRS_8, "dripstone_block");
-        slabBlock(ModBlocks.DRIPSTONE_SLAB_1, "dristone_1");
-        slabBlock(ModBlocks.DRIPSTONE_SLAB_2, "drisptone_2");
+        slabBlockTop(ModBlocks.DRIPSTONE_SLAB_1, "dripstone_1", "dripstone_1_top");
+        slabBlock(ModBlocks.DRIPSTONE_SLAB_2, "dripstone_2");
         slabBlock(ModBlocks.DRIPSTONE_SLAB_3, "dripstone_3");
         slabBlock(ModBlocks.DRIPSTONE_SLAB_4, "dripstone_4");
         slabBlock(ModBlocks.DRIPSTONE_SLAB_5, "dripstone_5");
