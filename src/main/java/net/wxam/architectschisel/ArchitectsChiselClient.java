@@ -7,8 +7,11 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.wxam.architectschisel.menu.ModMenuTypes;
+import net.wxam.architectschisel.screen.ChiselScreen;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = ArchitectsChisel.MOD_ID, dist = Dist.CLIENT)
@@ -20,6 +23,11 @@ public class ArchitectsChiselClient {
         // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
         // Do not forget to add translations for your config options to the en_us.json file.
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+    }
+
+    @SubscribeEvent
+    public static void onClientsetup(RegisterMenuScreensEvent event) {
+        event.register(ModMenuTypes.CHISEL_MENU.get(), ChiselScreen::new);
     }
 
     @SubscribeEvent

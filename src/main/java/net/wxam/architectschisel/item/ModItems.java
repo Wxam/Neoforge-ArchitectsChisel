@@ -16,7 +16,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ArchitectsChisel.MOD_ID);
 
     public static final DeferredItem<Item> IRON_CHISEL = ITEMS.register("iron_chisel",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new ChiselItem(new Item.Properties().stacksTo(1)));
 
     private static DeferredItem<Item> registerItem(String name, Item.Properties properties) {
         return ITEMS.register(name, () -> new Item(properties) {

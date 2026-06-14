@@ -5,6 +5,8 @@
   "item.architectschisel.iron_chisel": "Iron Chisel",
   "tooltip.item.iron_chisel": "Right Click and Change Blocks",
 
+  "gui.architectschisel.chisel": "Chisel",
+
   "block.architectschisel.acacia_planks_1": "Acacia Planks",
   "tooltip.block.acacia_planks_1": "Vertical",
   "block.architectschisel.acacia_planks_2": "Acacia Planks",

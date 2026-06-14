@@ -1,9 +1,11 @@
 package net.wxam.architectschisel;
 
-import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.wxam.architectschisel.block.ModBlocks;
 import net.wxam.architectschisel.item.ModCreativeModeTabs;
 import net.wxam.architectschisel.item.ModItems;
+import net.wxam.architectschisel.menu.ModMenuTypes;
+import net.wxam.architectschisel.recipe.ChiselRecipeFactory;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -15,10 +17,8 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ArchitectsChisel.MOD_ID)
 public class ArchitectsChisel {
     public static final String MOD_ID = "architectschisel";
@@ -30,11 +30,14 @@ public class ArchitectsChisel {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        NeoForge.EVENT_BUS.addListener(this::onAddReloadListeners);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModMenuTypes.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
 
@@ -47,6 +50,10 @@ public class ArchitectsChisel {
 
     private void commonSetup(FMLCommonSetupEvent event) {
 
+    }
+
+    private void onAddReloadListeners(AddReloadListenerEvent event) {
+        event.addListener(new ChiselRecipeFactory());
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
