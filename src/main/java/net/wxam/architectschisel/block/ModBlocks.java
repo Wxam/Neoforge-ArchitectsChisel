@@ -650,7 +650,13 @@ public class ModBlocks {
     public static final DeferredBlock<SlabBlock> AMETHYST_SLAB_6 = registerBlock("amethyst_slab_6", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
     public static final DeferredBlock<SlabBlock> AMETHYST_SLAB_7 = registerBlock("amethyst_slab_7", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
     public static final DeferredBlock<SlabBlock> AMETHYST_SLAB_8 = registerBlock("amethyst_slab_8", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    
+
+    public static final DeferredBlock<ChainBlock> CHAIN_1 = registerBlock("chain_1", () -> new ChainBlock((BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN))));
+    public static final DeferredBlock<ChainBlock> CHAIN_2 = registerBlock("chain_2", () -> new ChainBlock((BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN))));
+    public static final DeferredBlock<ChainBlock> CHAIN_3 = registerBlock("chain_3", () -> new ChainBlock((BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN))));
+    public static final DeferredBlock<ChainBlock> CHAIN_4 = registerBlock("chain_4", () -> new ChainBlock((BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN))));
+    public static final DeferredBlock<ChainBlock> CHAIN_5 = registerBlock("chain_5", () -> new ChainBlock((BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN))));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

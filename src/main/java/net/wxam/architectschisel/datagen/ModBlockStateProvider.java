@@ -1,7 +1,9 @@
 package net.wxam.architectschisel.datagen;
 
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.ChainBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
@@ -714,5 +716,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ResourceLocation texture = mcLoc("block/" + textureName);
         slabBlock(deferredBlock.get(), texture, texture);
         simpleBlockItem(deferredBlock.get(), models().slab(deferredBlock.get().getDescriptionId(), texture, texture, texture));
+    }
+
+    private void chainBlock(DeferredBlock<ChainBlock> deferredBlock, String textureName) {
+        ResourceLocation blocktexture = ResourceLocation.fromNamespaceAndPath(ArchitectsChisel.MOD_ID, "block/decorative/chains/" + textureName);
+        ResourceLocation itemTexture = ResourceLocation.fromNamespaceAndPath(ArchitectsChisel.MOD_ID, "item/" + textureName);
+
+        ModelFile chainModel = models().withExistingParent(deferredBlock.getId().getPath(), mcLoc("block/chain"))
+                .texture("all", blocktexture)
+                .texture("particle", blocktexture);
+
+        getVariantBuilder(deferredBlock.get())
+                .partialState().with(ChainBlock.AXIS, Direction.Axis.Y)
+                .modelForState().modelFile(chainModel).addModel()
+                .partialState().with(ChainBlock.AXIS, Direction.Axis.X)
+                .modelForState().modelFile(chainModel).rotationX(90).rotationY(90).addModel()
+                .partialState().with(ChainBlock.AXIS, Direction.Axis.Z)
+                .modelForState().modelFile(chainModel).rotationX(90).addModel();
+
+        itemModels().withExistingParent(deferredBlock.getId().getPath(), mcLoc("item/generated"))
+                .texture("layer0", itemTexture);
     }
 }

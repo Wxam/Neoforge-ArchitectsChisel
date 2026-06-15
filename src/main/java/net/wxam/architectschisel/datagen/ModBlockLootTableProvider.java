@@ -647,6 +647,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.AMETHYST_SLAB_7.get(), this::createSlabItemTable);
         add(ModBlocks.AMETHYST_SLAB_8.get(), this::createSlabItemTable);
 
+        dropSelf(ModBlocks.CHAIN_1.get());
+        dropSelf(ModBlocks.CHAIN_2.get());
+        dropSelf(ModBlocks.CHAIN_3.get());
+        dropSelf(ModBlocks.CHAIN_4.get());
+        dropSelf(ModBlocks.CHAIN_5.get());
+
     }
 
     @Override
