@@ -1085,6 +1085,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.AMETHYST_SLAB_5.get())
                 .add(ModBlocks.AMETHYST_SLAB_6.get())
                 .add(ModBlocks.AMETHYST_SLAB_7.get())
-                .add(ModBlocks.AMETHYST_SLAB_8.get());
+                .add(ModBlocks.AMETHYST_SLAB_8.get())
+
+                .add(ModBlocks.CHAIN_1.get())
+                .add(ModBlocks.CHAIN_2.get())
+                .add(ModBlocks.CHAIN_3.get())
+                .add(ModBlocks.CHAIN_4.get())
+                .add(ModBlocks.CHAIN_5.get());
     }
 }

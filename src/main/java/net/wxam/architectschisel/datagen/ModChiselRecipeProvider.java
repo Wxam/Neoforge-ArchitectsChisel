@@ -933,6 +933,15 @@ public class ModChiselRecipeProvider implements DataProvider {
                     "architectschisel:amethyst_slab_8"
             )));
 
+            futures.add(saveRecipe(cache, "chain", List.of(
+                    "minecraft:chain",
+                    "architectschisel:chain_1",
+                    "architectschisel:chain_2",
+                    "architectschisel:chain_3",
+                    "architectschisel:chain_4",
+                    "architectschisel:chain_5"
+            )));
+
         return CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]));
 
     }

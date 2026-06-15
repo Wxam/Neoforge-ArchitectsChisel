@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "architectschisel:block/chain_5",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "architectschisel:block/chain_5"
+    },
+    "axis=z": {
+      "model": "architectschisel:block/chain_5",
+      "x": 90
+    }
+  }
+}
