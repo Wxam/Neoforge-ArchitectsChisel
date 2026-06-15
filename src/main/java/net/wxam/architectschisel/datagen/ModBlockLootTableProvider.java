@@ -623,14 +623,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.TUFF_SLAB_7.get(), this::createSlabItemTable);
         add(ModBlocks.TUFF_SLAB_8.get(), this::createSlabItemTable);
 
-        dropSelf(ModBlocks.AMETHYST_1.get());
-        dropSelf(ModBlocks.AMETHYST_2.get());
-        dropSelf(ModBlocks.AMETHYST_3.get());
-        dropSelf(ModBlocks.AMETHYST_4.get());
-        dropSelf(ModBlocks.AMETHYST_5.get());
-        dropSelf(ModBlocks.AMETHYST_6.get());
-        dropSelf(ModBlocks.AMETHYST_7.get());
-        dropSelf(ModBlocks.AMETHYST_8.get());
+        dropSelf(ModBlocks.AMETHYST_BLOCK_1.get());
+        dropSelf(ModBlocks.AMETHYST_BLOCK_2.get());
+        dropSelf(ModBlocks.AMETHYST_BLOCK_3.get());
+        dropSelf(ModBlocks.AMETHYST_BLOCK_4.get());
+        dropSelf(ModBlocks.AMETHYST_BLOCK_5.get());
+        dropSelf(ModBlocks.AMETHYST_BLOCK_6.get());
+        dropSelf(ModBlocks.AMETHYST_BLOCK_7.get());
         dropSelf(ModBlocks.AMETHYST_STAIRS_1.get());
         dropSelf(ModBlocks.AMETHYST_STAIRS_2.get());
         dropSelf(ModBlocks.AMETHYST_STAIRS_3.get());

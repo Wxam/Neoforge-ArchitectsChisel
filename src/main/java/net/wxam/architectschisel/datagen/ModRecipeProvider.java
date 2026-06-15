@@ -1871,91 +1871,91 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(output);
 
         // Amethyst 1
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_1.get(), Ingredient.of(ModBlocks.AMETHYST_1.get()))
-                .unlockedBy("has_amethyst_1", has(ModBlocks.AMETHYST_1.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_1.get(), Ingredient.of(ModBlocks.AMETHYST_BLOCK_1.get()))
+                .unlockedBy("has_amethyst_1", has(ModBlocks.AMETHYST_BLOCK_1.get()))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_1.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_1.get())
-                .unlockedBy("has_amethyst_1", has(ModBlocks.AMETHYST_1.get()))
+                .define('X', ModBlocks.AMETHYST_BLOCK_1.get())
+                .unlockedBy("has_amethyst_1", has(ModBlocks.AMETHYST_BLOCK_1.get()))
                 .save(output);
 
         // Amethyst 2
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_2.get(), Ingredient.of(ModBlocks.AMETHYST_2.get()))
-                .unlockedBy("has_amethyst_2", has(ModBlocks.AMETHYST_2.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_2.get(), Ingredient.of(ModBlocks.AMETHYST_BLOCK_2.get()))
+                .unlockedBy("has_amethyst_2", has(ModBlocks.AMETHYST_BLOCK_2.get()))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_2.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_2.get())
-                .unlockedBy("has_amethyst_2", has(ModBlocks.AMETHYST_2.get()))
+                .define('X', ModBlocks.AMETHYST_BLOCK_2.get())
+                .unlockedBy("has_amethyst_2", has(ModBlocks.AMETHYST_BLOCK_2.get()))
                 .save(output);
 
         // Amethyst 3
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_3.get(), Ingredient.of(ModBlocks.AMETHYST_3.get()))
-                .unlockedBy("has_amethyst_3", has(ModBlocks.AMETHYST_3.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_3.get(), Ingredient.of(ModBlocks.AMETHYST_BLOCK_3.get()))
+                .unlockedBy("has_amethyst_3", has(ModBlocks.AMETHYST_BLOCK_3.get()))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_3.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_3.get())
-                .unlockedBy("has_amethyst_3", has(ModBlocks.AMETHYST_3.get()))
+                .define('X', ModBlocks.AMETHYST_BLOCK_3.get())
+                .unlockedBy("has_amethyst_3", has(ModBlocks.AMETHYST_BLOCK_3.get()))
                 .save(output);
 
         // Amethyst 4
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_4.get(), Ingredient.of(ModBlocks.AMETHYST_4.get()))
-                .unlockedBy("has_amethyst_4", has(ModBlocks.AMETHYST_4.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_4.get(), Ingredient.of(ModBlocks.AMETHYST_BLOCK_4.get()))
+                .unlockedBy("has_amethyst_4", has(ModBlocks.AMETHYST_BLOCK_4.get()))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_4.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_4.get())
-                .unlockedBy("has_amethyst_4", has(ModBlocks.AMETHYST_4.get()))
+                .define('X', ModBlocks.AMETHYST_BLOCK_4.get())
+                .unlockedBy("has_amethyst_4", has(ModBlocks.AMETHYST_BLOCK_4.get()))
                 .save(output);
 
         // Amethyst 5
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_5.get(), Ingredient.of(ModBlocks.AMETHYST_5.get()))
-                .unlockedBy("has_amethyst_5", has(ModBlocks.AMETHYST_5.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_5.get(), Ingredient.of(ModBlocks.AMETHYST_BLOCK_5.get()))
+                .unlockedBy("has_amethyst_5", has(ModBlocks.AMETHYST_BLOCK_5.get()))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_5.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_5.get())
-                .unlockedBy("has_amethyst_5", has(ModBlocks.AMETHYST_5.get()))
+                .define('X', ModBlocks.AMETHYST_BLOCK_5.get())
+                .unlockedBy("has_amethyst_5", has(ModBlocks.AMETHYST_BLOCK_5.get()))
                 .save(output);
 
         // Amethyst 6
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_6.get(), Ingredient.of(ModBlocks.AMETHYST_6.get()))
-                .unlockedBy("has_amethyst_6", has(ModBlocks.AMETHYST_6.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_6.get(), Ingredient.of(ModBlocks.AMETHYST_BLOCK_6.get()))
+                .unlockedBy("has_amethyst_6", has(ModBlocks.AMETHYST_BLOCK_6.get()))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_6.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_6.get())
-                .unlockedBy("has_amethyst_6", has(ModBlocks.AMETHYST_6.get()))
+                .define('X', ModBlocks.AMETHYST_BLOCK_6.get())
+                .unlockedBy("has_amethyst_6", has(ModBlocks.AMETHYST_BLOCK_6.get()))
                 .save(output);
 
         // Amethyst 7
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_7.get(), Ingredient.of(ModBlocks.AMETHYST_7.get()))
-                .unlockedBy("has_amethyst_7", has(ModBlocks.AMETHYST_7.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_7.get(), Ingredient.of(ModBlocks.AMETHYST_BLOCK_7.get()))
+                .unlockedBy("has_amethyst_7", has(ModBlocks.AMETHYST_BLOCK_7.get()))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_7.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_7.get())
-                .unlockedBy("has_amethyst_7", has(ModBlocks.AMETHYST_7.get()))
+                .define('X', ModBlocks.AMETHYST_BLOCK_7.get())
+                .unlockedBy("has_amethyst_7", has(ModBlocks.AMETHYST_BLOCK_7.get()))
                 .save(output);
 
         // Amethyst 8
-        stairBuilder(ModBlocks.AMETHYST_STAIRS_8.get(), Ingredient.of(ModBlocks.AMETHYST_8.get()))
-                .unlockedBy("has_amethyst_8", has(ModBlocks.AMETHYST_8.get()))
+        stairBuilder(ModBlocks.AMETHYST_STAIRS_8.get(), Ingredient.of(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
                 .save(output);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SLAB_8.get(), 6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.AMETHYST_BLOCK, 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.AMETHYST_8.get())
-                .unlockedBy("has_amethyst_8", has(ModBlocks.AMETHYST_8.get()))
+                .define('X', Blocks.AMETHYST_BLOCK)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
                 .save(output);
     }
 }

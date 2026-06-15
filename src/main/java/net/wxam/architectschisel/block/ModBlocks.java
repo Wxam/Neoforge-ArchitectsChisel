@@ -627,14 +627,13 @@ public class ModBlocks {
     public static final DeferredBlock<SlabBlock> TUFF_SLAB_7 = registerBlock("tuff_slab_7", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
     public static final DeferredBlock<SlabBlock> TUFF_SLAB_8 = registerBlock("tuff_slab_8", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
     
-    public static final DeferredBlock<Block> AMETHYST_1 = registerBlock("amethyst_1", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    public static final DeferredBlock<Block> AMETHYST_2 = registerBlock("amethyst_2", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    public static final DeferredBlock<Block> AMETHYST_3 = registerBlock("amethyst_3", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    public static final DeferredBlock<Block> AMETHYST_4 = registerBlock("amethyst_4", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    public static final DeferredBlock<Block> AMETHYST_5 = registerBlock("amethyst_5", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    public static final DeferredBlock<Block> AMETHYST_6 = registerBlock("amethyst_6", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    public static final DeferredBlock<Block> AMETHYST_7 = registerBlock("amethyst_7", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
-    public static final DeferredBlock<Block> AMETHYST_8 = registerBlock("amethyst_8", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK_1 = registerBlock("amethyst_block_1", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK_2 = registerBlock("amethyst_block_2", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK_3 = registerBlock("amethyst_block_3", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK_4 = registerBlock("amethyst_block_4", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK_5 = registerBlock("amethyst_block_5", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK_6 = registerBlock("amethyst_block_6", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK_7 = registerBlock("amethyst_block_7", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
     public static final DeferredBlock<StairBlock> AMETHYST_STAIRS_1 = registerBlock("amethyst_stairs_1", () -> new StairBlock(Blocks.AMETHYST_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
     public static final DeferredBlock<StairBlock> AMETHYST_STAIRS_2 = registerBlock("amethyst_stairs_2", () -> new StairBlock(Blocks.AMETHYST_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
     public static final DeferredBlock<StairBlock> AMETHYST_STAIRS_3 = registerBlock("amethyst_stairs_3", () -> new StairBlock(Blocks.AMETHYST_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));

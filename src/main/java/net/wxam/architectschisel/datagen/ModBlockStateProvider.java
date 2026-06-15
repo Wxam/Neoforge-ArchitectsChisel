@@ -2,6 +2,7 @@ package net.wxam.architectschisel.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -603,14 +604,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlockVanilla(ModBlocks.DRIPSTONE_SLAB_8, "dripstone_block");
 
         columnBlockWithItem(ModBlocks.TUFF_1, "tuff_1", "tuff_1_top");
-        blockWithItem(ModBlocks.TUFF_1);
         blockWithItem(ModBlocks.TUFF_2);
         blockWithItem(ModBlocks.TUFF_3);
         blockWithItem(ModBlocks.TUFF_4);
         columnBlockWithItem(ModBlocks.TUFF_5, "tuff_5", "tuff_5_top");
         blockWithItem(ModBlocks.TUFF_6);
         blockWithItem(ModBlocks.TUFF_7);
-        blockWithItem(ModBlocks.TUFF_8);
+        blockWithItemVanilla(ModBlocks.TUFF_8, "tuff");
         stairsBlockTop(ModBlocks.TUFF_STAIRS_1, "tuff_1", "tuff_1_top");
         stairsBlock(ModBlocks.TUFF_STAIRS_2, "tuff_2");
         stairsBlock(ModBlocks.TUFF_STAIRS_3, "tuff_3");
@@ -618,7 +618,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlockTop(ModBlocks.TUFF_STAIRS_5, "tuff_5", "tuff_5_top");
         stairsBlock(ModBlocks.TUFF_STAIRS_6, "tuff_6");
         stairsBlock(ModBlocks.TUFF_STAIRS_7, "tuff_7");
-        stairsBlock(ModBlocks.TUFF_STAIRS_8, "tuff_8");
+        stairsBlockVanilla(ModBlocks.TUFF_STAIRS_8, "tuff");
         slabBlockTop(ModBlocks.TUFF_SLAB_1, "tuff_1", "tuff_1_top");
         slabBlock(ModBlocks.TUFF_SLAB_2, "tuff_2");
         slabBlock(ModBlocks.TUFF_SLAB_3, "tuff_3");
@@ -626,16 +626,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlockTop(ModBlocks.TUFF_SLAB_5, "tuff_5", "tuff_5_top");
         slabBlock(ModBlocks.TUFF_SLAB_6, "tuff_6");
         slabBlock(ModBlocks.TUFF_SLAB_7, "tuff_7");
-        slabBlock(ModBlocks.TUFF_SLAB_8, "tuff_8");
+        slabBlockVanilla(ModBlocks.TUFF_SLAB_8, "tuff");
 
-        blockWithItem(ModBlocks.AMETHYST_1);
-        blockWithItem(ModBlocks.AMETHYST_2);
-        blockWithItem(ModBlocks.AMETHYST_3);
-        blockWithItem(ModBlocks.AMETHYST_4);
-        blockWithItem(ModBlocks.AMETHYST_5);
-        blockWithItem(ModBlocks.AMETHYST_6);
-        blockWithItem(ModBlocks.AMETHYST_7);
-        blockWithItem(ModBlocks.AMETHYST_8);
+        blockWithItem(ModBlocks.AMETHYST_BLOCK_1);
+        blockWithItem(ModBlocks.AMETHYST_BLOCK_2);
+        blockWithItem(ModBlocks.AMETHYST_BLOCK_3);
+        blockWithItem(ModBlocks.AMETHYST_BLOCK_4);
+        blockWithItem(ModBlocks.AMETHYST_BLOCK_5);
+        blockWithItem(ModBlocks.AMETHYST_BLOCK_6);
+        blockWithItem(ModBlocks.AMETHYST_BLOCK_7);
         stairsBlock(ModBlocks.AMETHYST_STAIRS_1, "amethyst_block_1");
         stairsBlock(ModBlocks.AMETHYST_STAIRS_2, "amethyst_block_2");
         stairsBlock(ModBlocks.AMETHYST_STAIRS_3, "amethyst_block_3");
@@ -643,7 +642,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(ModBlocks.AMETHYST_STAIRS_5, "amethyst_block_5");
         stairsBlock(ModBlocks.AMETHYST_STAIRS_6, "amethyst_block_6");
         stairsBlock(ModBlocks.AMETHYST_STAIRS_7, "amethyst_block_7");
-        stairsBlock(ModBlocks.AMETHYST_STAIRS_8, "amethyst_block_8");
+        stairsBlockVanilla(ModBlocks.AMETHYST_STAIRS_8, "amethyst_block");
         slabBlock(ModBlocks.AMETHYST_SLAB_1, "amethyst_block_1");
         slabBlock(ModBlocks.AMETHYST_SLAB_2, "amethyst_block_2");
         slabBlock(ModBlocks.AMETHYST_SLAB_3, "amethyst_block_3");
@@ -651,7 +650,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(ModBlocks.AMETHYST_SLAB_5, "amethyst_block_5");
         slabBlock(ModBlocks.AMETHYST_SLAB_6, "amethyst_block_6");
         slabBlock(ModBlocks.AMETHYST_SLAB_7, "amethyst_block_7");
-        slabBlock(ModBlocks.AMETHYST_SLAB_8, "amethyst_block_8");
+        slabBlockVanilla(ModBlocks.AMETHYST_SLAB_8, "amethyst_block");
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
@@ -692,10 +691,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(deferredBlock.get(), models().slab(blockName, side, top, top));
     }
 
-    private void columnBlockWithItem(DeferredBlock<?> deferredBlock, String sideTexture, String endTexture) {
+    private void columnBlockWithItem(DeferredBlock<RotatedPillarBlock> deferredBlock, String sideTexture, String endTexture) {
         ResourceLocation side = ResourceLocation.fromNamespaceAndPath(ArchitectsChisel.MOD_ID, "block/" + sideTexture);
         ResourceLocation end = ResourceLocation.fromNamespaceAndPath(ArchitectsChisel.MOD_ID, "block/" + endTexture);
-        simpleBlockWithItem(deferredBlock.get(), models().cubeTop(deferredBlock.get().getDescriptionId(), side, end));
+        axisBlock(deferredBlock.get(), side, end);
+        simpleBlockItem(deferredBlock.get(), models().cubeColumn(deferredBlock.getId().getPath(), side, end));
     }
 
     private void topBlockWithItem(DeferredBlock<?> deferredBlock, String sideTexture, String topTexture) {

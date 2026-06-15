@@ -900,14 +900,13 @@ public class ModChiselRecipeProvider implements DataProvider {
             
             futures.add(saveRecipe(cache, "amethyst", List.of(
                     "minecraft:amethyst_block",
-                    "architectschisel:amethyst_1",
-                    "architectschisel:amethyst_2",
-                    "architectschisel:amethyst_3",
-                    "architectschisel:amethyst_4",
-                    "architectschisel:amethyst_5",
-                    "architectschisel:amethyst_6",
-                    "architectschisel:amethyst_7",
-                    "architectschisel:amethyst_8"
+                    "architectschisel:amethyst_block_1",
+                    "architectschisel:amethyst_block_2",
+                    "architectschisel:amethyst_block_3",
+                    "architectschisel:amethyst_block_4",
+                    "architectschisel:amethyst_block_5",
+                    "architectschisel:amethyst_block_6",
+                    "architectschisel:amethyst_block_7"
             )));
 
             futures.add(saveRecipe(cache, "amethyst_stairs", List.of(
