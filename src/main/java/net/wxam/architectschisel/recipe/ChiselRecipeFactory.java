@@ -68,6 +68,10 @@ public class ChiselRecipeFactory extends SimpleJsonResourceReloadListener {
         return new ArrayList<>();
     }
 
+    public List<ChiselRecipe> getChiselRecipes() {
+        return recipes;
+    }
+
     public static ChiselRecipeFactory get() {
         return INSTANCE;
     }

@@ -5,6 +5,8 @@
   "item.architectschisel.iron_chisel": "Iron Chisel",
   "tooltip.item.iron_chisel": "Right Click and Change Blocks",
 
+  "jei.architectschisel.chiseling": "Chiseling",
+
   "gui.architectschisel.chisel": "Chisel",
 
   "block.architectschisel.chain_1": "Chain",
