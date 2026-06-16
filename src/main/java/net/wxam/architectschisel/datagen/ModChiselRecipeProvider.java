@@ -793,7 +793,6 @@ public class ModChiselRecipeProvider implements DataProvider {
          
          futures.add(saveRecipe(cache, "calcite", List.of(
                  "minecraft:calcite",
-                 "architectschisel:calite_1",
                  "architectschisel:calite_2",
                  "architectschisel:calite_3",
                  "architectschisel:calite_4",
@@ -870,8 +869,7 @@ public class ModChiselRecipeProvider implements DataProvider {
                    "architectschisel:tuff_4",
                    "architectschisel:tuff_5",
                    "architectschisel:tuff_6",
-                   "architectschisel:tuff_7",
-                   "architectschisel:tuff_8"
+                   "architectschisel:tuff_7"
            )));
 
             futures.add(saveRecipe(cache, "tuff_stairs", List.of(

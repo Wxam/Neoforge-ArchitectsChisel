@@ -983,7 +983,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.GILDED_NETHER_BRICKS_3.get())
                 .add(ModBlocks.GILDED_NETHER_BRICKS_4.get())
                 
-                .add(ModBlocks.CALCITE_1.get())
                 .add(ModBlocks.CALCITE_2.get())
                 .add(ModBlocks.CALCITE_3.get())
                 .add(ModBlocks.CALCITE_4.get())

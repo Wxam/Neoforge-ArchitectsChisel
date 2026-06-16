@@ -550,7 +550,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.GILDED_NETHER_BRICKS_3.get());
         dropSelf(ModBlocks.GILDED_NETHER_BRICKS_4.get());
         
-        dropSelf(ModBlocks.CALCITE_1.get());
         dropSelf(ModBlocks.CALCITE_2.get());
         dropSelf(ModBlocks.CALCITE_3.get());
         dropSelf(ModBlocks.CALCITE_4.get());
@@ -606,7 +605,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.TUFF_5.get());
         dropSelf(ModBlocks.TUFF_6.get());
         dropSelf(ModBlocks.TUFF_7.get());
-        dropSelf(ModBlocks.TUFF_8.get());
         dropSelf(ModBlocks.TUFF_STAIRS_1.get());
         dropSelf(ModBlocks.TUFF_STAIRS_2.get());
         dropSelf(ModBlocks.TUFF_STAIRS_3.get());

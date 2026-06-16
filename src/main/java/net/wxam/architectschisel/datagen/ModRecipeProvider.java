@@ -1607,14 +1607,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(output);
 
             // Calcite 1
-        stairBuilder(ModBlocks.CALCITE_STAIRS_1.get(), Ingredient.of(ModBlocks.CALCITE_1.get()))
-                .unlockedBy("has_calcite_1", has(ModBlocks.CALCITE_1.get()))
+        stairBuilder(ModBlocks.CALCITE_STAIRS_1.get(), Ingredient.of(Blocks.CALCITE))
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_SLAB_1.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.CALCITE_1.get())
-                .unlockedBy("has_calcite_1", has(ModBlocks.CALCITE_1.get()))
+                .define('X', Blocks.CALCITE)
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
                 .save(output);
 
             // Calcite 2
@@ -1860,14 +1860,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(output);
 
         // Tuff 8
-        stairBuilder(ModBlocks.TUFF_STAIRS_8.get(), Ingredient.of(ModBlocks.TUFF_8.get()))
-                .unlockedBy("has_tuff_8", has(ModBlocks.TUFF_8.get()))
+        stairBuilder(ModBlocks.TUFF_STAIRS_8.get(), Ingredient.of(Blocks.TUFF))
+                .unlockedBy("has_tuff", has(Blocks.TUFF))
                 .save(output);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_SLAB_8.get(), 6)
                 .pattern("XXX")
-                .define('X', ModBlocks.TUFF_8.get())
-                .unlockedBy("has_tuff_8", has(ModBlocks.TUFF_8.get()))
+                .define('X', Blocks.TUFF)
+                .unlockedBy("has_tuff", has(Blocks.TUFF))
                 .save(output);
 
         // Amethyst 1

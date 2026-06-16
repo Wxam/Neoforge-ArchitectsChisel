@@ -553,7 +553,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GILDED_NETHER_BRICKS_3 = registerBlock("gilded_nether_bricks_3", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)));
     public static final DeferredBlock<RotatedPillarBlock> GILDED_NETHER_BRICKS_4 = registerBlock("gilded_nether_bricks_4", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)));
  
-    public static final DeferredBlock<Block> CALCITE_1 = registerBlock("calcite_1", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE)));
     public static final DeferredBlock<Block> CALCITE_2 = registerBlock("calcite_2", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE)));
     public static final DeferredBlock<Block> CALCITE_3 = registerBlock("calcite_3", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE)));
     public static final DeferredBlock<Block> CALCITE_4 = registerBlock("calcite_4", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE)));
@@ -609,7 +608,6 @@ public class ModBlocks {
     public static final DeferredBlock<RotatedPillarBlock> TUFF_5 = registerBlock("tuff_5", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
     public static final DeferredBlock<Block> TUFF_6 = registerBlock("tuff_6", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
     public static final DeferredBlock<Block> TUFF_7 = registerBlock("tuff_7", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
-    public static final DeferredBlock<Block> TUFF_8 = registerBlock("tuff_8", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
     public static final DeferredBlock<StairBlock> TUFF_STAIRS_1 = registerBlock("tuff_stairs_1", () -> new StairBlock(Blocks.TUFF.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
     public static final DeferredBlock<StairBlock> TUFF_STAIRS_2 = registerBlock("tuff_stairs_2", () -> new StairBlock(Blocks.TUFF.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));
     public static final DeferredBlock<StairBlock> TUFF_STAIRS_3 = registerBlock("tuff_stairs_3", () -> new StairBlock(Blocks.TUFF.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF)));

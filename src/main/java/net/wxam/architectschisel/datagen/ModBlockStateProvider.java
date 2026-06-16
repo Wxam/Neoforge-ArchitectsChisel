@@ -556,7 +556,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.GILDED_NETHER_BRICKS_3);
         columnBlockWithItem(ModBlocks.GILDED_NETHER_BRICKS_4, "gilded_nether_bricks_4", "gilded_nether_bricks_4_top");
 
-        blockWithItemVanilla(ModBlocks.CALCITE_1, "calcite");
         blockWithItem(ModBlocks.CALCITE_2);
         blockWithItem(ModBlocks.CALCITE_3);
         blockWithItem(ModBlocks.CALCITE_4);
@@ -612,7 +611,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         columnBlockWithItem(ModBlocks.TUFF_5, "tuff_5", "tuff_5_top");
         blockWithItem(ModBlocks.TUFF_6);
         blockWithItem(ModBlocks.TUFF_7);
-        blockWithItemVanilla(ModBlocks.TUFF_8, "tuff");
         stairsBlockTop(ModBlocks.TUFF_STAIRS_1, "tuff_1", "tuff_1_top");
         stairsBlock(ModBlocks.TUFF_STAIRS_2, "tuff_2");
         stairsBlock(ModBlocks.TUFF_STAIRS_3, "tuff_3");

@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wxam.architectschisel.ArchitectsChisel;
 import net.wxam.architectschisel.block.ModBlocks;
+import net.wxam.architectschisel.block.ModChains;
 
 import java.util.function.Supplier;
 
@@ -23,6 +24,7 @@ public class ModCreativeModeTabs {
                         ModItems.ITEMS.getEntries().stream()
                                 .filter(item -> !(item.get() instanceof BlockItem))
                                 .forEach(item -> output.accept(item.get()));
+                        ModChains.BLOCKS.getEntries().forEach(block -> output.accept(block.get()));
                     }).build());
 
     public static final Supplier<CreativeModeTab> BLOCKS_TAB = CREATIVE_MODE_TAB.register("blocks_tab",

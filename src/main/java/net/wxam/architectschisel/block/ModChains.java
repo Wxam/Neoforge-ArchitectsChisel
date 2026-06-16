@@ -24,7 +24,7 @@ public class ModChains {
             DeferredRegister.createBlocks(ArchitectsChisel.MOD_ID);
 
     public static final DeferredBlock<ChainBlock> CHAIN_1 = registerBlock("chain_1", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
-    public static final DeferredBlock<ChainBlock> CHAIN_2 = registerBlock("chain_2", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
+    public static final DeferredBlock<ChainBlock> CHAIN_2 = registerBlock("chain_2", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL)));
     public static final DeferredBlock<ChainBlock> CHAIN_3 = registerBlock("chain_3", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
     public static final DeferredBlock<ChainBlock> CHAIN_4 = registerBlock("chain_4", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
     public static final DeferredBlock<ChainBlock> CHAIN_5 = registerBlock("chain_5", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
