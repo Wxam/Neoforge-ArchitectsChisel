@@ -11,6 +11,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.wxam.architectschisel.ArchitectsChisel;
 import net.wxam.architectschisel.ModTags;
 import net.wxam.architectschisel.block.ModBlocks;
+import net.wxam.architectschisel.block.ModChains;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -1087,10 +1088,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.AMETHYST_SLAB_7.get())
                 .add(ModBlocks.AMETHYST_SLAB_8.get())
 
-                .add(ModBlocks.CHAIN_1.get())
-                .add(ModBlocks.CHAIN_2.get())
-                .add(ModBlocks.CHAIN_3.get())
-                .add(ModBlocks.CHAIN_4.get())
-                .add(ModBlocks.CHAIN_5.get());
+                .add(ModChains.CHAIN_1.get())
+                .add(ModChains.CHAIN_2.get())
+                .add(ModChains.CHAIN_3.get())
+                .add(ModChains.CHAIN_4.get())
+                .add(ModChains.CHAIN_5.get());
     }
 }

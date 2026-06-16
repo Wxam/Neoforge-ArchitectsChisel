@@ -6,6 +6,7 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.wxam.architectschisel.block.ModBlocks;
+import net.wxam.architectschisel.block.ModChains;
 
 import java.util.Set;
 
@@ -647,11 +648,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.AMETHYST_SLAB_7.get(), this::createSlabItemTable);
         add(ModBlocks.AMETHYST_SLAB_8.get(), this::createSlabItemTable);
 
-        dropSelf(ModBlocks.CHAIN_1.get());
-        dropSelf(ModBlocks.CHAIN_2.get());
-        dropSelf(ModBlocks.CHAIN_3.get());
-        dropSelf(ModBlocks.CHAIN_4.get());
-        dropSelf(ModBlocks.CHAIN_5.get());
+        dropSelf(ModChains.CHAIN_1.get());
+        dropSelf(ModChains.CHAIN_2.get());
+        dropSelf(ModChains.CHAIN_3.get());
+        dropSelf(ModChains.CHAIN_4.get());
+        dropSelf(ModChains.CHAIN_5.get());
 
     }
 

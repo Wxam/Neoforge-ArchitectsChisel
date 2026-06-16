@@ -2,6 +2,7 @@ package net.wxam.architectschisel;
 
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.wxam.architectschisel.block.ModBlocks;
+import net.wxam.architectschisel.block.ModChains;
 import net.wxam.architectschisel.item.ModCreativeModeTabs;
 import net.wxam.architectschisel.item.ModItems;
 import net.wxam.architectschisel.menu.ModMenuTypes;
@@ -45,6 +46,7 @@ public class ArchitectsChisel {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModChains.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
