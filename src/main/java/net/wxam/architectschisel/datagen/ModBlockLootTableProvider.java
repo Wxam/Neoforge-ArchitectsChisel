@@ -9,6 +9,7 @@ import net.wxam.architectschisel.block.ModBlocks;
 import net.wxam.architectschisel.block.ModChains;
 
 import java.util.Set;
+import java.util.stream.Stream;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected ModBlockLootTableProvider(HolderLookup.Provider registries) {
@@ -656,6 +657,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+        return Stream.concat(
+                ModBlocks.BLOCKS.getEntries().stream(),
+                ModChains.BLOCKS.getEntries().stream()
+        ).map(Holder::value)::iterator;
     }
 }
