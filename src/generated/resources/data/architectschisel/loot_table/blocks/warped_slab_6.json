@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "architectschisel:warped_slab_6"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "architectschisel:blocks/warped_slab_6"
+}
